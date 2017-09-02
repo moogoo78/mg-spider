@@ -17,7 +17,8 @@ def get_soup(url):
 
 
 def main(url):
-    
+    """ex: python pixnet-album.py http://xxxxx.pixnet.net/album/set/xxxxxx"""
+
     rows = []
     o = urlparse(url)
     base_url = '%s://%s' % (o.scheme, o.netloc)
